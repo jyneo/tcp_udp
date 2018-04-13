@@ -107,7 +107,7 @@ public class MyButton extends android.support.v7.widget.AppCompatButton {
                     setBackgroundColor(Color.parseColor(backColorSelectedS));
                 }
             }
-            //判断是否设置了按下后文字的颜色
+            // 判断是否设置了按下后文字的颜色
             if (textColorSelectedI != 0) {
                 setTextColor(textColorSelectedI);
             }else if (textColorSelectedS != null) {
@@ -269,7 +269,7 @@ public class MyButton extends android.support.v7.widget.AppCompatButton {
      * 设置按钮文字颜色
      * @param textColor:
      */
-    public void setTextColors(String textColor) {
+    public void setTextColorS(String textColor) {
         this.textColorS = textColor;
         setTextColor(Color.parseColor(textColor));
     }
@@ -278,7 +278,7 @@ public class MyButton extends android.support.v7.widget.AppCompatButton {
      * 设置按钮文字颜色
      * @param textColor:
      */
-    public void setTextColori(int textColor) {
+    public void setTextColorI(int textColor) {
         this.textColorI = textColor;
         setTextColor(textColor);
     }

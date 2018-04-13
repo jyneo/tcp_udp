@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.constraint.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2"
+        android:id="@+id/vertical_line_1"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8"
+        android:id="@+id/vertical_line_2"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.25"
+        android:id="@+id/horizontal_line_1"/>
+
+    <android.support.constraint.Guideline
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.85"
+        android:id="@+id/horizontal_line_2"/>
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        app:layout_constraintLeft_toLeftOf="@id/vertical_line_1"
+        app:layout_constraintRight_toRightOf="@id/vertical_line_2"
+        app:layout_constraintTop_toTopOf="@id/horizontal_line_1"
+        app:layout_constraintBottom_toBottomOf="@id/horizontal_line_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ff0000"
+        android:orientation="vertical">
+
+        <com.jyneo.tcp_udp.custom.MyButton
+            android:id="@+id/button_tcp_client"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"/>
+
+        <com.jyneo.tcp_udp.custom.MyButton
+            android:id="@+id/button_tcp_server"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"/>
+
+        <com.jyneo.tcp_udp.custom.MyButton
+            android:id="@+id/button_udp_client"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"/>
+
+        <com.jyneo.tcp_udp.custom.MyButton
+            android:id="@+id/button_udp_server"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"/>
+
+        <com.jyneo.tcp_udp.custom.MyButton
+            android:id="@+id/button_bluetooth"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"/>
+
+        <com.jyneo.tcp_udp.custom.MyButton
+            android:id="@+id/button_smart_config"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
