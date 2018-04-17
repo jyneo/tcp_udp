@@ -33,7 +33,7 @@ public class MyButton extends android.support.v7.widget.AppCompatButton {
     private String textColorSelectedS = null; // 按下后的文字颜色，String类型
     private int textColorSelectedI = 0; // 按下后的文字颜色，int类型
 
-    private float radius = 8; // 圆角半径
+    private float radius = 12; // 圆角半径
     private int shape = GradientDrawable.RECTANGLE; // 圆角样式，矩形、圆形等，由于矩形的Id为0，默认为矩形
     private Boolean fillet = false; // 是否设置圆角
 

@@ -19,6 +19,10 @@
         <activity android:name=".activity.AboutMeActivity"/>
         <activity android:name=".activity.ReadMeActivity"/>
         <activity android:name=".activity.BaseActivity"/>
+        <activity android:name=".activity.TcpClientActivity"/>
+        <activity android:name=".activity.TcpServerActivity"/>
+        <activity android:name=".activity.UdpClientActivity"/>
+        <activity android:name=".activity.SmartConfigActivity"/>
     </application>
 
 </manifest>
