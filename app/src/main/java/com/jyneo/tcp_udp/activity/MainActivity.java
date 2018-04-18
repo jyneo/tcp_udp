@@ -46,7 +46,6 @@ public class MainActivity extends BaseActivity {
 
         // 设置中间的标题
         myTitleBar.setTitleText("Main Menu");
-        myTitleBar.setTitleTextSize(20);
 
         // 设置右侧文字显示文字
         myTitleBar.setRightText("About Me");
@@ -68,7 +67,6 @@ public class MainActivity extends BaseActivity {
         button_tcp_client.setBackColorSelected("#1E90FF");
         button_tcp_client.setTextColorS("#FFFFFF");
         button_tcp_client.setTextColorSelected("#C0C0C0");
-        button_tcp_client.setFillet(true);
         button_tcp_client.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

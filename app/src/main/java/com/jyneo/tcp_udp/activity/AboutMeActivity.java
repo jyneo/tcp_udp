@@ -28,7 +28,7 @@ public class AboutMeActivity extends BaseActivity{
         // 初始化控件
         MyTitleBar myTitleBar = findViewById(R.id.custom_title_bar);
         // 设置背景色
-        myTitleBar.setBackColor("#7067E2");
+        myTitleBar.setBackColor("#1E90FF");
 
         // 设置左侧文字显示文字
         myTitleBar.setLeftText("Main Menu");
@@ -43,7 +43,7 @@ public class AboutMeActivity extends BaseActivity{
 
         // 设置中间的标题
         myTitleBar.setTitleText("About Me");
-        myTitleBar.setTitleTextSize(20);
+        myTitleBar.setTitleTextSize(15);
 
     }
 }

@@ -83,7 +83,7 @@ public class MyButton extends android.support.v7.widget.AppCompatButton {
         });
     }
 
-    //改变样式
+    // 改变样式
     private void setColor(int state){
         if (state == MotionEvent.ACTION_DOWN) {
             // 按下
@@ -103,14 +103,14 @@ public class MyButton extends android.support.v7.widget.AppCompatButton {
                         gradientDrawable = new GradientDrawable();
                     }
                     gradientDrawable.setColor(Color.parseColor(backColorSelectedS));
-                }else {
+                } else {
                     setBackgroundColor(Color.parseColor(backColorSelectedS));
                 }
             }
             // 判断是否设置了按下后文字的颜色
             if (textColorSelectedI != 0) {
                 setTextColor(textColorSelectedI);
-            }else if (textColorSelectedS != null) {
+            } else if (textColorSelectedS != null) {
                 setTextColor(Color.parseColor(textColorSelectedS));
             }
             // 判断是否设置了按下后的背景图
@@ -149,6 +149,7 @@ public class MyButton extends android.support.v7.widget.AppCompatButton {
                     setBackgroundColor(Color.parseColor(backColorS));
                 }
             }
+
             // 如果没有设置字体颜色，默认为黑色
             if (textColorI == 0 && textColorS == null) {
                 setTextColor(Color.BLACK);

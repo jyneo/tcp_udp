@@ -83,13 +83,14 @@ public class MyTitleBar extends RelativeLayout {
         // 垂直居中
         layoutParams.addRule(RelativeLayout.CENTER_VERTICAL);
         // 设置距离左侧10dp
-        layoutParams.leftMargin = dp2px(context, 20);
-        layoutParams.topMargin = dp2px(context, 10);
-        layoutParams.bottomMargin = dp2px(context, 10);
+        layoutParams.leftMargin = dp2px(context, 10);
+        layoutParams.topMargin = dp2px(context, 8);
+        layoutParams.bottomMargin = dp2px(context, 8);
         btnLeft.setLayoutParams(layoutParams);
-        btnLeft.setTextSize(18); // 设置字体大小,默认为18
-        btnLeft.setTextColor(Color.WHITE); // 默认字体颜色为白色
-        btnLeft.setTextColorSelected("#909090"); // 按下后的字体颜色
+
+        btnLeft.setTextSize(15); // 设置字体大小,默认为15
+        btnLeft.setTextColorI(Color.WHITE); // 默认字体颜色为白色
+        btnLeft.setTextColorSelected("#C0C0C0"); // 按下后的字体颜色
         // 定义其点击事件
         btnLeft.setOnClickListener(new OnClickListener() {
             @Override
@@ -109,21 +110,22 @@ public class MyTitleBar extends RelativeLayout {
         // 设置标题文字颜色
         tvTitle.setTextColor(Color.WHITE);
         // 设置标题文字大小
-        tvTitle.setTextSize(18); // 默认为18
+        tvTitle.setTextSize(15); // 默认为15
 
         // 初始化右侧MyButton
         btnRight = new MyButton(context);
         layoutParams = new RelativeLayout.LayoutParams(LayoutParams.WRAP_CONTENT,LayoutParams.WRAP_CONTENT);
-        layoutParams.rightMargin = dp2px(context, 20);
+        layoutParams.rightMargin = dp2px(context, 10);
         // 垂直居中
         layoutParams.addRule(RelativeLayout.CENTER_VERTICAL);
         // 居于父控件的右侧
         layoutParams.addRule(RelativeLayout.ALIGN_PARENT_RIGHT);
         btnRight.setLayoutParams(layoutParams);
-        btnRight.setTextSize(18); // 默认为18
+        btnRight.setTextSize(15); // 默认为15
         btnRight.setVisibility(View.GONE); // 默认隐藏右侧控件
-        btnRight.setTextColor(Color.WHITE);
-        btnRight.setTextColorSelected("#909090");
+        btnRight.setTextColorI(Color.WHITE);
+        btnRight.setTextColorSelected("#C0C0C0"); // 按下后的字体颜色
+//        btnRight.setTextColorSelected("#909090");
         btnRight.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
